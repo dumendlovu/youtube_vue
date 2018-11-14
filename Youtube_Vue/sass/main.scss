@@ -1,0 +1,61 @@
+@mixin font-base {
+  padding: 0;
+  margin :0;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h4{
+  @include font-base;
+}
+p{
+  @include font-base;
+  color: grey;
+  font-size: 0.7rem;
+}
+body{
+  background-color: #000;
+  .container{
+    background-color: #fff;
+    margin: auto;
+    width:70%;
+  }
+  header section{
+    background-color: #fff;
+    position: fixed ;
+    text-align: center;
+    width:70%;
+  }
+  header{
+    display: inline-block;
+    .logo{
+       width:150px;
+       padding: 20px;
+     }
+     h1{
+     }
+  }
+  main{
+    padding: 2%;
+    section{
+      padding: 2%;
+    }
+  }
+
+  // header, section{
+  //   position: fixed ;
+  //   text-align: center;
+  //   width:560px;
+  //   background-color: #fff;
+  // }
+  // header{
+  //   .logo{
+  //     width:120px;
+  //     padding: 10px;
+  //     float: left;
+  //   }
+  // }
+  // section{
+  //   top: 50px;
+  // }
+}
